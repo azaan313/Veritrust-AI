@@ -26,7 +26,7 @@ with col1:
             try:
                 # Intercept data and send it to our local FastAPI micro-server
                 response = requests.post(
-                    "http://127.0.0.1:8000/api/v1/proxy/sanitize",
+                    "https://veritrust-ai-o6wc.onrender.com",
                     json={"user_id": user_id, "prompt": sample_input}
                 ).json()
                 
